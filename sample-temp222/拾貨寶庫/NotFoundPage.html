@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 頁面未找到</title>
+    <style>
+        body {
+            background-color: #FCE8A9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            width: 400px;
+
+        }
+        .browser-bar {
+            width: 375px;
+            height: 30px;
+            background: #F4A261;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            padding-left: 20px;
+        }
+        .buttons {
+            display: flex;
+        }
+        .button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .red { background: #E63946; }
+        .yellow { background: #FCE8A9; }
+        .green { background: #2A9D8F; }
+        .error-code {
+            padding: 40px;
+            padding-bottom: 30px;
+            font-size: 100px;
+            font-weight: bold;
+            color: #D57236;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .message {
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="browser-bar">
+            <div class="buttons">
+                <div class="button red"></div>
+                <div class="button yellow"></div>
+                <div class="button green"></div>
+            </div>
+        </div>
+        <div class="error-code">
+            404
+        </div>
+        <h2>Oops! 頁面找不到了</h2>
+        <p class="message">抱歉，您請求的頁面不存在。</p>
+    </div>
+</body>
+</html>

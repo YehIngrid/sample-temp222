@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+        <!-- 定義藍色與綠色漸層 -->
+        <defs>
+          <linearGradient id="chineseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#004B97"/>
+            <stop offset="100%" stop-color="rgb(88, 179, 137)"/>
+          </linearGradient>
+          <linearGradient id="englishGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="rgb(88, 179, 137)"/>
+            <stop offset="100%" stop-color="#004B97"/>
+          </linearGradient>
+        </defs>
+      
+        <!-- 背景 -->
+        <rect width="600" height="200" fill="white"/>
+      
+        <!-- 中文文字：置中，上方 -->
+        <text x="300" y="80" text-anchor="middle" dominant-baseline="middle"
+              font-family="TimeMachine" font-size="64"
+              fill="url(#chineseGradient)" font-weight="bold"
+              textLength="400" lengthAdjust="spacingAndGlyphs">
+          拾貨寶庫
+        </text>
+      
+        <!-- 英文文字 (全大寫)：置中於中文下方 -->
+        <text x="300" y="140" text-anchor="middle" dominant-baseline="middle"
+              font-family="TimeMachine" font-size="36"
+              fill="url(#englishGradient)" font-weight="900"
+              textLength="400" lengthAdjust="spacingAndGlyphs">
+          TREASURE HUB
+        </text>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+        <!-- 定義藍色與綠色漸層 -->
+        <defs>
+          <linearGradient id="chineseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#004B97"/>
+            <stop offset="100%" stop-color="#58B389"/>
+          </linearGradient>
+          <linearGradient id="englishGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#58B389"/>
+            <stop offset="100%" stop-color="#004B97"/>
+          </linearGradient>
+        </defs>
+      
+        <!-- 較小的文字背景：僅包覆中英文區域 -->
+        <rect x="100" y="40" width="400" height="120" fill="white" stroke="#004B97" stroke-width="2"/>
+      
+        <!-- 文字群組：中英文置中，寬度固定 -->
+        <g>
+          <!-- 中文文字：置中於背景上方 -->
+          <text x="300" y="80" text-anchor="middle" dominant-baseline="middle"
+                font-family="Microsoft YaHei, sans-serif" font-size="64"
+                fill="url(#chineseGradient)" font-weight="bold"
+                textLength="400" lengthAdjust="spacingAndGlyphs">
+            拾貨寶庫
+          </text>
+          <!-- 英文文字 (全大寫)：置中於背景下方 -->
+          <text x="300" y="140" text-anchor="middle" dominant-baseline="middle"
+                font-family="Futura, Helvetica, Arial, sans-serif" font-size="36"
+                fill="url(#englishGradient)" font-weight="bold"
+                textLength="400" lengthAdjust="spacingAndGlyphs">
+            TREASURE HUB
+          </text>
+        </g>
+      </svg>
+      <style>
+        @font-face {
+            font-family: 'TimeMachine';
+            src: url("fonts/timemachine-wa.ttf");
+        }
+      </style>
+</body>
+</html>

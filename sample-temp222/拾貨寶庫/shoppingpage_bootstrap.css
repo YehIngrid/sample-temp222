@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'fangsong';
+    src: url(fonts/simfang.ttf);
+}
+html {
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.picture img{
+    width: 40px;
+    height: 39px;
+    border-radius: 50%;
+}
+.h1_title {
+    font-family: "fangsong";
+    font-weight: 700;
+    font-size: 2.4rem !important;
+    color: white !important;
+}
+.navbar{
+    color: white !important;
+}
+.navbar{
+    background-color: rgb(184, 153, 220); /* 半透明背景 */
+    padding: 10px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拾貨寶庫</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/YehIngrid/sample/refs/heads/main/%E6%8B%BE%E8%B2%A8%E5%AF%B6%E5%BA%AB_circular_icon.ico">
+    <meta name="description" content="拾貨寶庫是中興大學最方便的二手拍賣市集"/>
+    <meta name="keywords" content="拾獲寶庫、拾貨寶庫、中興二手"/>
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+</head>
+
+
+<body>
+    <div class="header">
+        <a class="picture" href="home.html"><img src="https://github.com/YehIngrid/sample/blob/main/%E6%8B%BE%E8%B2%A8%E5%AF%B6%E5%BA%AB.jpg?raw=true" alt="拾貨寶庫Logo">
+        <a class="h1" href="home.html">拾貨寶庫</a></a>
+        <ul class="drop-down-menu">
+            <li><a class="hvr-underline-from-center" href="news.html">最新資訊</a></li>
+            <li><a class="hvr-underline-from-center" href="homepage.html">全部商品</a>
+            <ul class="device">
+                <li><a class="hvr-fade" href="#">品項分類</a>
+                <ul>
+                    <li><a class="hvr-fade" href="#">書籍與學籍用品</a>
+                    <ul>
+                        <li><a class="hvr-fade" href="#">教科書</a></li>
+                        <li><a class="hvr-fade" href="#">參考書</a></li>
+                        <li><a class="hvr-fade" href="#">文具用品</a></li>
+                        <li><a class="hvr-fade" href="#">學習卡片</a></li>
+                        <li><a class="hvr-fade" href="#">筆記/習題集</a></li>
+                    </ul></li>
+                    <li><a class="hvr-fade" href="#">宿舍與生活用品</a>
+                        <ul>
+                            <li><a class="hvr-fade" href="#">宿舍用品</a></li>
+                            <li><a class="hvr-fade" href="#">小型廚房用品</a></li>
+                            <li><a class="hvr-fade" href="#">生活設備</a></li>
+                        </ul></li>
+                    <li><a class="hvr-fade" href="#">學生專用器材</a>
+                        <ul>
+                            <li><a class="hvr-fade" href="#">實驗器材</a></li>
+                            <li><a class="hvr-fade" href="#">測量工具</a></li>
+                        </ul></li>
+                    <li><a class="hvr-fade" href="#">環保生活用品</a>
+                        <ul>
+                            <li><a class="hvr-fade" href="#">環保餐具</a></li>
+                            <li><a class="hvr-fade" href="#">購物袋/手提袋</a></li>
+                        </ul></li></li>
+                    <li><a class="hvr-fade" href="#">儲物與收納用品</a>
+                        <ul>
+                            <li><a class="hvr-fade" href="#">收納盒/文件夾</a></li>
+                            <li><a class="hvr-fade" href="#">掛鉤/收納架</a></li>
+                        </ul></li></li>
+                </ul></li>
+                <li><a class="hvr-fade" href="#">尺寸分類</a>
+                <ul>
+                    <li><a class="hvr-fade" href="#">小型</a>
+                    <li><a class="hvr-fade" href="#">中型</a>
+                    <li><a class="hvr-fade" href="#">大型</a>
+                </ul></li>
+            </ul></li>
+            <li><a class="hvr-underline-from-center" href="questions.html">常見問題</a></li>
+            <li><a class="hvr-underline-from-center" href="introduce.html">團隊介紹</a></li>
+            <li><a class="hvr-underline-from-center" href="communication.html">客服諮詢</a></li>
+        </ul>
+        <ul class="special">
+            <li><a id="accountimg" class="hvr-shrink"><i class="fa-solid fa-user"></i></a></li>
+            <li><a class="hvr-shrink" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+        <ul class="line">
+            <li><a href="https://page.line.me/889pygzb"><i class="fa-brands fa-line"></i></a></li>
+        </ul>
+    </div>
+    <div id="loginModal" class="content">
+        <div class="modal">
+            <form id="loginForm">
+                <label for="username" class="p" >帳號：</label>
+                <input type="text" id="account" placeholder="請使用中興大學提供的帳號">
+                <br>
+                <label for="password" class="p" >密碼：</label>
+                <input type="password" id="password" placeholder="請輸入至少6位以上">
+                <a href="#" class="p">忘記密碼？</a><br>
+                <button type="submit" id="send">登入</button>
+            </form>
+            <p class="p">還沒有加入拾獲寶庫的會員嗎？<a id="signup">馬上註冊</a></p>
+        </div>
+    </div>
+
+    <div id="signuppage" class="signuppage">
+        <div id="signupModal" class="modal">
+            <form id="signupForm">
+                <label for="email" class="p" >電子郵件：</label>
+                <input type="email" id="email" placeholder="請輸入學校提供的電子郵件">
+                <button id="test" class="p" onclick="doSomething();return false;">取得驗證碼</button>
+                <label for="" class="p">驗證碼：</label>
+                <input type="text" placeholder="請輸入驗證碼">
+                <br>
+                <label for="password" class="p" >設定您的密碼：</label>
+                <input type="password" id="password1" placeholder="請輸入至少6位以上">
+                <br>
+                <label for="password" class="p" >確認密碼：</label>
+                <input type="password" id="password2" placeholder="請再次輸入密碼">
+                <br>
+                <label for="name" class="p" >暱稱：</label>
+                <input type="text" id="name" placeholder="請輸入暱稱">
+                <br>
+                <button type="submit" id="sign" class="p">註冊</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer"></div>
+        <p>©2025拾貨寶庫｜All Rights Reserved</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="account.js"></script>
+
+</body>
+    
