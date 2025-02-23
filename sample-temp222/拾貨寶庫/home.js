@@ -23,8 +23,8 @@ let observer = new IntersectionObserver((entries, observer) => {
 
 function startAllAnimations() {
     animateNumber("#trees", 0, 4, 2);
-    animateNumber("#bags", 0, 86, 2.5);
-    animateNumber("#co2", 0, 4, 3);
+    animateNumber("#bags", 0, 100, 2.5);
+    animateNumber("#co2", 0, 4, 4);
 }
 
 // 檢查頁面載入時 `#trees` 是否已經在視窗內
